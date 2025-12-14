@@ -1,6 +1,6 @@
 # COT-RAG-Agent
 
-This project explores an agentic RAG setup by fine-tuning an LLM with UNSLOTH to act as a query-generating controller that iteratively retrieves and conditions on external documents from a vector database.
+This project explores an agentic RAG setup by fine-tuning an LLM with UNSLOTH to act as a query-generating controller that iteratively retrieves and conditions on external documents from a vector database. The code is old approx 1,5 years old, and it might not function as expected. 
 
 The repository contains the following notebooks:
 	-	Inference (inference.ipynb): Connects to a vector database (ChromaDB) and runs an iterative retrieve-and-generate loop.
@@ -26,7 +26,7 @@ The approach works for a small number of tool calls (typically 2–3), but degra
 
 Together, these issues lead to malformed outputs, query drift, and weak grounding in retrieved evidence once the loop runs for multiple iterations.
 
-This was a short exploratory project aimed at understanding synthetic data generation, distillation-style supervision, and agentic RAG failure modes, rather than a production-ready system.
+This was a short exploratory project I did **1,5 years ago** aimed at understanding synthetic data generation, rag and finetuning. If you ever need a stable rag agent just use langchain. 
 
 Model artifacts are available on Hugging Face:
 Martingkc/llama_lora_merged_model_v3￼
